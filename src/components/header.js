@@ -1,11 +1,12 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Image from "./image"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `darkorchid`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -16,6 +17,17 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
+      <div
+        style={{
+          border: `2px solid white`,
+          display: `inline-block`,
+          height: `34px`,
+          marginRight: `.5em`,
+          width: `34px`,
+        }}
+      >
+        <Image />
+      </div>
       <h1 style={{
         display: `inline-block`,
         margin: 0,
@@ -36,7 +48,7 @@ const Header = ({ siteTitle }) => (
         style={{
           backgroundColor: `white`,
           borderRadius: `.5em`,
-          color: `rebeccapurple`,
+          color: `darkorchid`,
           display: `inline-block`,
           float: `right`,
           fontWeight: `bold`,
