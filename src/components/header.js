@@ -16,7 +16,11 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{
+        display: `inline-block`,
+        margin: 0,
+        maxWidth: `50%`,
+      }}>
         <Link
           to="/"
           style={{
@@ -27,9 +31,24 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <a
+        href="/pdf/disability-and-cyberspace.pdf"
+        style={{
+          backgroundColor: `white`,
+          borderRadius: `.5em`,
+          color: `rebeccapurple`,
+          display: `inline-block`,
+          float: `right`,
+          fontWeight: `bold`,
+          padding: `.5em`,
+          textDecoration: `none`,
+        }}
+      >
+        Dissertation
+      </a>
     </div>
   </header>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
