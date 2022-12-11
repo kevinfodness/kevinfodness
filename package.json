@@ -1,43 +1,36 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "gatsby": "^2.17.6",
-    "gatsby-image": "^2.2.30",
-    "gatsby-plugin-manifest": "^2.2.25",
-    "gatsby-plugin-offline": "^3.0.17",
-    "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-sharp": "^2.2.34",
-    "gatsby-source-filesystem": "^2.1.35",
-    "gatsby-transformer-sharp": "^2.3.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.1"
-  },
-  "devDependencies": {
-    "prettier": "^1.18.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "author": {
+    "name": "Kevin Fodness",
+    "url": "https://www.kevinfodness.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+    "url": "https://github.com/kevinfodness/kevinfodness/issues"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^1.0.1",
+    "next": "^13.0.6",
+    "nextra": "^2.0.1",
+    "nextra-theme-blog": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
+  },
+  "description": "Source code for kevinfodness.com",
+  "engines": {
+    "node": "18",
+    "npm": "8"
+  },
+  "homepage": "https://www.kevinfodness.com",
+  "license": "GPL-3.0-or-later",
+  "name": "kevinfodness",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinfodness/kevinfodness"
+  },
+  "scripts": {
+    "build": "next build && next export",
+    "dev": "next"
+  },
+  "version": "0.2.0"
 }
