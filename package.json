@@ -17,7 +17,7 @@
   },
   "description": "Source code for kevinfodness.com",
   "engines": {
-    "node": "16",
+    "node": "18",
     "npm": "8"
   },
   "homepage": "https://www.kevinfodness.com",
